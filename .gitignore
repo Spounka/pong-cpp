@@ -47,3 +47,6 @@ _deps
 
 # Build dir
 build/
+
+# clang format file
+.clang*
