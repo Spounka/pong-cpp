@@ -1,4 +1,7 @@
 {
-    "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
-    "cmake.generator": "Unix Makefiles"
+	"cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+	"cmake.generator": "Unix Makefiles",
+	"editor.fontFamily": "'JetBrains Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'CodeNewRoman NF'",
+	"editor.fontLigatures": true,
+	"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 }
