@@ -50,3 +50,5 @@ build/
 
 # clang format file
 .clang*
+
+.vscode/
