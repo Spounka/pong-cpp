@@ -150,9 +150,9 @@ int main(int argc, char **argv) {
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
-            initGame();
         }
 
+        initGame();
         moveBall(ball);
         checkBallCollision(ball);
         handleRectInput(left, right);
