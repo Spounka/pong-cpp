@@ -7,9 +7,8 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-find_package(SFML 2.5 COMPONENTS network audio graphics window system REQUIRED)
-
-include_directories(${SFML_INCLUDE_DIR})
+add_subdirectory("extern/SFML-2.5.1")
+include_directories("extern/SFML-2.5.1/include")
 
 set(HEADER_FILES
 )
@@ -21,3 +20,4 @@ set(SOURCES
 
 add_executable(pong ${SOURCES} ${HEADER_FILES})
 target_link_libraries(pong PRIVATE sfml-graphics sfml-system sfml-network sfml-audio sfml-window)
+file(COPY "${CMAKE_SOURCE_DIR}/consolaz.ttf" DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})

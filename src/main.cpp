@@ -12,7 +12,7 @@
 #define FRAME_RATE 60U
 
 #define Move_Speed 10.0f
-#define FONT "/home/spounka/.fonts/TTF/consolaz.ttf"
+#define FONT "consolaz.ttf"
 
 static bool gameStarted = false;
 static sf::Font font;
